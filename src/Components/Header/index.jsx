@@ -46,7 +46,9 @@ export const Header = () => {
             <header className='header'>
                 {logos && logos.length > 0 && logos[currentIndex] && (
                     <div className="logo-container">
-                        <img src={urlFor(logos[currentIndex].asset._ref).url()} />
+                        <a href='/'>
+                            <img src={urlFor(logos[currentIndex].asset._ref).url()} />
+                        </a>
                     </div>
                 )}
                 {navigation && navigation.length > 0 && (
