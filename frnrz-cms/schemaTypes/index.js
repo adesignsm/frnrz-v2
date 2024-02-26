@@ -1,12 +1,12 @@
 import projects from "./projects";
-import videoReel from "./videoReel";
+import sizzleReel from "./sizzleReel";
 import header from './header';
 import home from "./home";
 
 export const schemaTypes = [
     header,
     projects,
-    videoReel,
+    sizzleReel,
     home,
 ]
 
