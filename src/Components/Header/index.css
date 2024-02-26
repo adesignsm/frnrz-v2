@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header .logo-container {
+    width: 250px;
+}
+
+header .logo-container img {
+    max-width: 100%;
+}
+
+header .navigation {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    gap: 15px;
+}
+
+header .navigation img {
+    max-width: 100%;
+}
