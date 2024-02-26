@@ -1,0 +1,17 @@
+.home-page .quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page .quote-container img {
+    width: 700px;
+}
+
+.home-page .quote-container h1 {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 4em;
+    max-width: 60vw;
+    text-align: justify;
+}
