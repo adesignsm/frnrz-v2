@@ -1,3 +1,10 @@
+.home-page {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+    font-family: 'Neue-Medium';
+}
+
 .home-page .quote-container {
     display: flex;
     justify-content: center;
@@ -14,4 +21,6 @@
     font-size: 4em;
     max-width: 60vw;
     text-align: justify;
+    mix-blend-mode: difference;
+    color: #ffff26;
 }
