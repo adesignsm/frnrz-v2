@@ -5,6 +5,7 @@ import { SizzleReel } from "./Components/SizzleReel";
 import { Stars } from "./Components/Stars";
 
 import { Home } from "./Pages/Home";
+import { Footer } from "./Components/Footer";
 
 export const App = () => {
     return (
@@ -17,6 +18,7 @@ export const App = () => {
                     </Routes>
                     <SizzleReel />
                     <Stars />
+                    <Footer />
                 </BrowserRouter>
             </main>
         </>
