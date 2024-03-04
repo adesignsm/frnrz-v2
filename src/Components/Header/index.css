@@ -1,14 +1,16 @@
 header {
-    position: relative;
+    position: sticky;
+    top: 1vh;
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    mix-blend-mode: difference;
 }
 
 header .logo-container {
+    position: relative;
     width: 250px;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 header .logo-container img {
@@ -20,7 +22,7 @@ header .navigation {
     width: 300px;
     align-items: center;
     gap: 15px;
-    padding-right: 1rem;
+    padding-right: 2rem;
 }
 
 header .navigation img {
