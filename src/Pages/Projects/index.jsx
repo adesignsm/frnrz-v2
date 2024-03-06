@@ -54,25 +54,25 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                     <div 
-                                            id='dropdown-container' 
-                                            className={`dropdown-container ${isDropdownOpen ? 'show' : ''}`} 
-                                            onClick={(e) => hideDropDown(e)}
-                                        >
-                                            <div className='dropdown-content'>
-                                                <h1>{project.project_title}</h1>
-                                                <h2>{project.project_subheading} - {project.project_year}</h2>
-                                                <Slider media={project.project_media} />
-                                                <div className="description">
-                                                    <h3>{project.project_description}</h3>
-                                                    <ul>
-                                                        {project.project_roles && project.project_roles.map((role, index) => {
-                                                            return <li key={index}>{role}</li>
-                                                        })}
-                                                    </ul>
-                                                </div>
-                                                <a href={project.project_link}>View</a>
+                                        id='dropdown-container' 
+                                        className={`dropdown-container ${isDropdownOpen ? 'show' : ''}`} 
+                                        onClick={(e) => hideDropDown(e)}
+                                    >
+                                        <div className='dropdown-content'>
+                                            <h1>{project.project_title}</h1>
+                                            <h2>{project.project_subheading} - {project.project_year}</h2>
+                                            <Slider media={project.project_media} />
+                                            <div className="description">
+                                                <h3>{project.project_description}</h3>
+                                                <ul>
+                                                    {project.project_roles && project.project_roles.map((role, index) => {
+                                                        return <li key={index}>{role}</li>
+                                                    })}
+                                                </ul>
                                             </div>
+                                            <a href={project.project_link}>View</a>
                                         </div>
+                                    </div>
                                 </>
                             )
                         })
