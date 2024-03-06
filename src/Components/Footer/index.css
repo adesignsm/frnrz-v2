@@ -1,5 +1,6 @@
 .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     z-index: 2;
     font-family: 'VCR-MONO';
     color: #ffff26;
@@ -17,6 +18,7 @@
 .footer marquee h1 {
     font-size: 3em;
     word-spacing: -10px;
+    font-family: 'VCR-MONO';
 }
 
 .footer marquee h1 > span {
