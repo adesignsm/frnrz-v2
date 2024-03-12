@@ -52,6 +52,24 @@ export default {
                     }
                 ]
             }]
+        },
+        {
+            name: 'backgroundImageToggle',
+            title: 'Background Image Toggle',
+            description: 'Upload and toggle the background image for the seervices page.',
+            type: 'object',
+            fields: [
+                {
+                    name: 'image',
+                    title: 'Background Image',
+                    type: 'image'
+                },
+                {
+                    name: 'toggle',
+                    type: 'boolean',
+                    title: 'Toggle'
+                }
+            ]
         }
     ]
 }
