@@ -1,7 +1,8 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { visionTool } from '@sanity/vision'
+import { schemaTypes } from './schemaTypes'
+import { simplerColorInput } from 'sanity-plugin-simpler-color-input'
 
 export default defineConfig({
   name: 'default',
@@ -10,7 +11,13 @@ export default defineConfig({
   projectId: 'ufskghtn',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [
+    structureTool(), 
+    visionTool(),
+    simplerColorInput({
+      enableSearch: true
+    }),
+  ],
 
   schema: {
     types: schemaTypes,
