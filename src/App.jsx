@@ -8,6 +8,7 @@ import { Footer } from "./Components/Footer";
 import { Home } from "./Pages/Home";
 import { Projects } from "./Pages/Projects";
 import { Services } from "./Pages/Services";
+import { About } from './Pages/About';
 
 export const App = () => {
     return (
@@ -17,6 +18,7 @@ export const App = () => {
                     <Header />
                     <Routes>
                         <Route exact path='/' element={<Home />} />
+                        <Route path='/about' element={<About />} />
                         <Route path='/projects' element={<Projects />} />
                         <Route path='/services' element={<Services />} />
                     </Routes>
