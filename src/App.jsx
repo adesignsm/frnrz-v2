@@ -9,6 +9,7 @@ import { Home } from "./Pages/Home";
 import { Projects } from "./Pages/Projects";
 import { Services } from "./Pages/Services";
 import { About } from './Pages/About';
+import { Vision } from "./Pages/Vision";
 
 export const App = () => {
     return (
@@ -21,6 +22,7 @@ export const App = () => {
                         <Route path='/about' element={<About />} />
                         <Route path='/projects' element={<Projects />} />
                         <Route path='/services' element={<Services />} />
+                        <Route path='/vision' elemtn={<Vision />} />
                     </Routes>
                     <SizzleReel />
                     <Stars />
