@@ -22,7 +22,7 @@ export const App = () => {
                         <Route path='/about' element={<About />} />
                         <Route path='/projects' element={<Projects />} />
                         <Route path='/services' element={<Services />} />
-                        <Route path='/vision' elemtn={<Vision />} />
+                        <Route path='/vision' element={<Vision />} />
                     </Routes>
                     <SizzleReel />
                     <Stars />
