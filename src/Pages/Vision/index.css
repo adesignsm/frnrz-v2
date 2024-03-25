@@ -1,0 +1,39 @@
+.vision-page {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+.vision-page .vision-container {
+    width: 50%;
+    height: 80%;
+    overflow-y: auto;
+    margin-top: 3rem;
+}
+
+.vision-page .vision-container h1 {
+    font-size: xxx-large;
+    margin: 0;
+    margin-bottom: .5rem;
+    background-color: #f62e97;
+    width: fit-content;
+    padding: .5rem 1rem;
+}
+
+.vision-page .vision-container .description {
+    font-family: 'Neue-Medium';
+    font-size: x-large;
+    max-height: 500px;
+}
+
+.vision-page .creative-container {
+    width: 50%;
+}
