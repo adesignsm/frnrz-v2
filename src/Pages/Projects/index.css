@@ -1,6 +1,8 @@
 .projects-page {
     position: relative;
     z-index: 1;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .projects-page .projects-container {
@@ -12,6 +14,7 @@
     margin: 0 auto;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .projects-page .projects-container .project {
@@ -113,10 +116,17 @@
     margin-top: 0;
 }
 
+.projects-page .projects-container .dropdown-content .description {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
 .projects-page .projects-container .dropdown-content .description h3 {
     color: #fff;
     font-family: 'Neue-Medium';
     font-weight: lighter;
+    max-width: 50%;
 }
 
 .projects-page .projects-container .dropdown-content .description ul {
