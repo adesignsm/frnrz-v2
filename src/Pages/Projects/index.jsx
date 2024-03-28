@@ -22,17 +22,17 @@ export const Projects = () => {
         }
     }
 
-    const fetchData = async () => {
-        try {
-            const query = `*[_type == 'projects']`;
-            const result = await sanityClient.fetch(query);
-            setData(result);
-        } catch (error) {   
-            console.error(error);
-        }
-    };
-
     useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const query = `*[_type == 'projects']`;
+                const result = await sanityClient.fetch(query);
+                setData(result);
+            } catch (error) {   
+                console.error(error);
+            }
+        };
+
         fetchData();
     }, []);
 
@@ -47,7 +47,7 @@ export const Projects = () => {
                                 <>
                                     <div className={`project ${isDropdownOpen ? 'active' : ''}`} index={project.project_order_number}>
                                         <div className='cover'>
-                                            <img src={urlFor(project.project_cover.asset._ref).url()} />
+                                            <img src={urlFor(project.project_cover.asset._ref).url()} loading="lazy" />
                                             <div className="overlay" onClick={() => setOpenProjectIndex(isDropdownOpen ? null : project.project_order_number)}>
                                                 <h2>{project.project_subheading}</h2>
                                             </div>

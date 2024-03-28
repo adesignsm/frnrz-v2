@@ -74,7 +74,14 @@ export const Model = () => {
             <Canvas frameloop="always" camera={{fov: 75, near: 0.1, far: 10000, position: [0, 0, renderLayerComp ? -8 : 2.5]}}>
                 <ambientLight intensity={0} />
                 {renderLayerComp ? <LayerComp /> : <ModelHead />}
-                <OrbitControls />
+                {renderLayerComp 
+                    ? (
+                        <OrbitControls 
+                            minAzimuthAngle={2} 
+                            maxAzimuthAngle={-2}
+                        />
+                    ) : ( <OrbitControls /> )
+                }
                 <EffectComposer>
                     <Bloom mipmapBlur intensity={0.2} />
                 </EffectComposer>

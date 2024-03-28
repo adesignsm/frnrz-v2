@@ -58,6 +58,7 @@ export const Slider = ({ media }) => {
                                 src={urlFor(image.asset._ref).url()} 
                                 onLoad={handleImageLoad}
                                 className={isPaused ? 'paused' : ''}
+                                loading='lazy'
                             />
                         )
                     ))}
